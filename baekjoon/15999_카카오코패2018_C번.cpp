@@ -31,22 +31,21 @@ int main()
 
 	for (int i = 0; i < n; i++) {
 		for (int k = 0; k < m; k++) {
-			if (i - 1 >= 0 && arr[i][k] != arr[i - 1][k] ||
+			if (	i - 1 >= 0 && arr[i][k] != arr[i - 1][k] ||
 				i + 1 < n  && arr[i][k] != arr[i + 1][k] ||
 				k - 1 >= 0 && arr[i][k] != arr[i][k - 1] ||
 				k + 1 < m  && arr[i][k] != arr[i][k + 1]
-				) {
-				continue;
-			}
+				) {continue;}			
 			changable++;			
 		}
 	}
+	
 	int p = 2,k = 1;
 	while (p <= MAXIMUM) {
 		p *= 2;
 		k++;
 	}
-
+	
 	for (int i = 0; i < changable; i++) {
 		result *= 2;
 		result = result % MAXIMUM;
