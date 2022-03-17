@@ -13,10 +13,10 @@ bool calc(int x) {
 	long long result = 0;
 	for (int i = 0; i < n; i++) {
 		if (arr[i] - x > 0){
-			   result += arr[i] - x;        
-         if(result >= m)
-             return true;
-     }
+			result += arr[i] - x;        
+			if(result >= m)
+				return true;
+		}
 	}
 	return result >= m ? true : false;
 }
