@@ -2,6 +2,8 @@
 //노드 간의 거리가 1로 같으므로 n에서부터 BFS를 통해 방문하면 최단거리가 된다.
 //시간복잡도는 T(DPMAX+1)이다. 즉 n의 범위에 선형적인 시간복잡도.
 //while문 안에서 k에 도달했다면 도중에 종료하도록 조건문을 넣는 것도 괜찮아 보인다.
+//https://www.acmicpc.net/problem/1697
+
 
 #include <stdio.h>
 #include <queue>
